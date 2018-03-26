@@ -1,5 +1,6 @@
 #slider {
   height: 400px;
+  margin-top: -32px;
 }
 .slides {
   width: 300%;
