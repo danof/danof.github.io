@@ -1,6 +1,6 @@
 #slider {
   height: 400px;
-  margin-top: -32px;
+  /* margin-top: -32px; */
 }
 .slides {
   width: 300%;
@@ -10,15 +10,15 @@
   font-family: 'Open Sans', sans-serif;
 }
 .content-txt {
-  max-width: 420px;
+  width: 480px;
   height: 320px;
-  /*box-sizing: border-box;*/
-  top: 25px;
-  margin-left: 40px;
-  margin-right: 40px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
+  top: 25px;
 }
 .content-txt.right {
   float: right;
@@ -82,6 +82,7 @@
   display: table-cell;
   vertical-align: middle;
 }
+
 @keyframes slide{
   0%,100%{
     margin-left: 0%;
@@ -101,4 +102,41 @@
   96%{
     margin-left: -200%;
   }
+}
+
+@media (max-width: 767px) {
+  .content-txt {
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  .content-txt h1,
+  .content-txt h2,
+  .content-txt p {
+    color: #fff !important;
+  }
+
+  .content-txt h1 {
+    font-size: 36px;
+  }
+
+  .content-txt h2 {
+    font-size: 18px;
+  }
+
+  #slider .content {
+    background: url(https://staging2.bluevolt.com/userfiles/3017/froalaUploads/transparent_gray.png);
+  }
+
+  #slider .absolute-center-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #slider .btn.lg {
+    font-size: 24px;
+  }
+
 }
