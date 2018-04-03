@@ -1,6 +1,6 @@
 #slider {
   height: 400px;
-  /* margin-top: -32px; */
+  margin-top: -32px;
 }
 .slides {
   width: 300%;
@@ -104,6 +104,20 @@
   }
 }
 
+@media (max-width: 991px) {
+  #slide1 .image {
+    background-position: 10% 0% !important;
+  }
+
+  #slide2 .image {
+    /* background-position: 90% 0% !important; */
+  }
+
+  #slide2 .content {
+    background: url(https://staging2.bluevolt.com/userfiles/3017/froalaUploads/transparent_gray.png);
+  }
+}
+
 @media (max-width: 767px) {
   .content-txt {
     margin-top: 10px;
@@ -137,6 +151,14 @@
 
   #slider .btn.lg {
     font-size: 24px;
+  }
+
+  #slide1 .image {
+    background-position: 50% 0% !important;
+  }
+
+  #slide2 .image {
+    background-position: 25% 0% !important;
   }
 
 }
